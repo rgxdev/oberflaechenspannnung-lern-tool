@@ -1,0 +1,8 @@
+services:
+  oberflaechenspannnung-frontend:
+    image: ghcr.io/rgxdev/oberflaechenspannnung-lern-tool:latest
+    ports:
+      - "4001:4001"
+    restart: always
+    environment:
+      NODE_ENV: production
