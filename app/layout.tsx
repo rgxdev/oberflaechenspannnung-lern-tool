@@ -17,18 +17,18 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://oberflaechenspannung.d-aaron.dev"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Oberflächenspannung - Interaktives Lernmodul",
     description: "Interaktives Lernmodul zur Oberflächenspannung für Klasse 9 Gymnasium Bayern",
-    url: "https://your-domain.com",
+    url: "https://oberflaechenspannung.d-aaron.dev",
     siteName: "Oberflächenspannung Lernmodul",
     images: [
       {
-        url: "/og-image.png",
+        url: "/placeholder.jpg",
         width: 1200,
         height: 630,
         alt: "Oberflächenspannung Lernmodul",
@@ -41,15 +41,23 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Oberflächenspannung - Interaktives Lernmodul",
     description: "Interaktives Lernmodul zur Oberflächenspannung für Klasse 9 Gymnasium Bayern",
-    images: ["/og-image.png"],
+    images: ["/placeholder.jpg"],
   },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
     title: "Oberflächenspannung",
+    startupImage: [
+      {
+        url: "/placeholder.jpg",
+        media: "(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)",
+      },
+    ],
   },
   applicationName: "Oberflächenspannung Lernmodul",
   referrer: "origin-when-cross-origin",
+  category: "education",
+  classification: "Bildung",
   robots: {
     index: true,
     follow: true,
@@ -60,8 +68,7 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-    generator: 'v0.dev'
+  }
 }
 
 export const viewport: Viewport = {
@@ -84,15 +91,17 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/placeholder.svg" type="image/svg+xml" />
+        <link rel="icon" href="/placeholder-logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/placeholder-logo.png" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Oberflächenspannung" />
         <meta name="msapplication-TileColor" content="#0d9488" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="theme-color" content="#0d9488" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

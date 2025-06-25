@@ -484,7 +484,7 @@ export default function SurfaceTensionLearning() {
                               <h4 className="font-semibold text-slate-800 text-sm sm:text-base">Oberflächenspannung</h4>
                             </div>
                             <p className="text-xs sm:text-sm text-slate-600">
-                              Kraft pro Länge [N/m] - bei Wasser etwa 0,073 N/m bei 20°C
+                              Kraft pro Länge [N/m] - bei Wasser 0,0728 N/m bei 20°C
                             </p>
                           </div>
                           <div className="sm:col-span-2 lg:col-span-1">
@@ -495,7 +495,7 @@ export default function SurfaceTensionLearning() {
                               </h4>
                             </div>
                             <p className="text-xs sm:text-sm text-slate-600">
-                              Bei höherer Temperatur bewegen sich Moleküle schneller → geringere Oberflächenspannung
+                              Bei höherer Temperatur bewegen sich Moleküle schneller und schwächen die Wasserstoffbrücken → geringere Oberflächenspannung
                             </p>
                           </div>
                         </div>
@@ -533,17 +533,17 @@ export default function SurfaceTensionLearning() {
                           <div>
                             <h4 className="font-semibold text-indigo-800 text-sm sm:text-base">Kräftegleichgewicht</h4>
                             <p className="text-indigo-700 text-xs sm:text-sm">
-                              Die <strong>Oberflächenspannung</strong> wirkt nach oben und hält das Wasser zusammen. Die{" "}
-                              <strong>Gewichtskraft</strong> des Wassers wirkt nach unten.
+                              Die <strong>Oberflächenspannung</strong> erzeugt eine nach innen gerichtete Kraft, die das Wasser zusammenhält. Die{" "}
+                              <strong>Gewichtskraft</strong> des zusätzlichen Wassers wirkt nach unten.
                               <br />
-                              <strong>Solange Oberflächenspannung {">"} Gewichtskraft → kein Überlaufen</strong>
+                              <strong>Solange die resultierende Oberflächenkraft die Gewichtskraft übersteigt → kein Überlaufen</strong>
                             </p>
                           </div>
                           <div>
                             <h4 className="font-semibold text-indigo-800 text-sm sm:text-base">Meniskus</h4>
                             <p className="text-indigo-700 text-xs sm:text-sm">
-                              Die <strong>gewölbte Wasseroberfläche</strong> nennt man Meniskus. Bei Wasser im Glas ist
-                              er nach oben gewölbt (konvex).
+                              Die <strong>gewölbte Wasseroberfläche</strong> nennt man Meniskus. Bei Wasser in Glas ist
+                              er nach unten gewölbt (konkav), da die Adhäsion zwischen Wasser und Glas stärker ist als die Kohäsion.
                             </p>
                           </div>
                         </div>
@@ -638,7 +638,7 @@ export default function SurfaceTensionLearning() {
                           <div>
                             <h4 className="font-semibold text-blue-800 text-sm sm:text-base">3. Luftdruck</h4>
                             <p className="text-blue-700 text-xs sm:text-sm">
-                              Der <strong>äußere Luftdruck</strong> (etwa 1000 hPa) drückt von unten gegen das
+                              Der <strong>äußere Luftdruck</strong> (1013,25 hPa auf Meereshöhe) drückt von unten gegen das
                               Papiertuch und unterstützt den Effekt.
                             </p>
                           </div>
@@ -656,10 +656,13 @@ export default function SurfaceTensionLearning() {
                             <strong>Druck:</strong> p = F/A (Kraft pro Fläche) [Pa = N/m²]
                           </div>
                           <div>
-                            <strong>Gewichtskraft:</strong> F = m × g (Masse × Erdbeschleunigung) [N]
+                            <strong>Gewichtskraft:</strong> F<sub>G</sub> = m × g (Masse × Erdbeschleunigung, g ≈ 9,81 m/s²) [N]
                           </div>
                           <div>
                             <strong>Dichte:</strong> ρ = m/V (Masse pro Volumen) [kg/m³]
+                          </div>
+                          <div>
+                            <strong>Oberflächenspannung:</strong> σ = F/L (Kraft pro Länge) [N/m]
                           </div>
                         </div>
                       </CardContent>
