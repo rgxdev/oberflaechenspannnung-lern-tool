@@ -150,7 +150,7 @@ function VideoPlayer({ src, title }: { src: string; title: string }) {
             onLoadedMetadata={handleLoadedMetadata}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
-            poster="/placeholder.svg?height=720&width=1280"
+            poster="/placvid.png?height=720&width=1280"
           >
             <source src={src} type="video/mp4" />
             Ihr Browser unterstützt das Video-Element nicht.
@@ -517,7 +517,7 @@ export default function SurfaceTensionLearning() {
                       </p>
                     </div>
 
-                    <VideoPlayer src={currentChapterData?.video || ""} title="Video: Münzen im Reagenzglas" />
+                    <VideoPlayer src={"./exp_1.mp4"} title="Video: Münzen im Reagenzglas" />
 
                     <Card className="bg-indigo-50 border-indigo-200">
                       <CardHeader className="pb-3">
@@ -613,7 +613,7 @@ export default function SurfaceTensionLearning() {
                       </p>
                     </div>
 
-                    <VideoPlayer src={currentChapterData?.video || ""} title="Video: Das Papiertuch-Experiment" />
+                    <VideoPlayer src={"./exp_2.mp4"} title="Video: Das Papiertuch-Experiment" />
 
                     <Card className="bg-blue-50 border-blue-200">
                       <CardHeader className="pb-3">
@@ -684,7 +684,7 @@ export default function SurfaceTensionLearning() {
                     </div>
 
                     {/* Video Player */}
-                    <VideoPlayer src={currentChapterData?.video || ""} title="Video: Haftende Münzen" />
+                    <VideoPlayer src={"./exp_3.mp4"} title="Video: Haftende Münzen" />
 
                     {/* Scientific Analysis */}
                     <Card className="bg-green-50 border-green-200">
